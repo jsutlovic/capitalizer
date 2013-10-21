@@ -36,10 +36,18 @@ function Capitalizer(type, options) {
 }
 
 Capitalizer.prototype.capitalize = function(input) {
-  if (this.capitalizations.hasOwnProperty(this.type)) {
-    return this.capitalizations[this.type](input);
+  if (input.replace(/^\s+|\s+$/g, '').length) {
+    if (this.capitalizations.hasOwnProperty(this.type)) {
+      return this.capitalizations[this.type](input);
+    } else {
+      if (this.type === '') {
+        alert('Please pick a capitalization type');
+      } else {
+        alert("Can't capitalize that type!");
+      }
+    }
   } else {
-    alert("Can't capitalize that type!");
+    alert("Please enter a value!");
   }
 }
 
