@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- == Meta == -->
+    <meta charset="utf-8">
+    <title>Capitalizer | Epitronical Labs</title>
+    <meta name="description" content="Epitronical Labs: Capitalizer">
+    <meta name="keywords" content="capitalizer,free capitalizer">
+    <meta name="author" content="Jero Sutlovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- == Styles == -->
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Main style -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- == JavaScript == -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Capitalize-o-tron -->
+    <script src="js/capitalizer.js"></script>
+    <!-- Main app -->
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar navbar-default">
+        <div class="container">
+          <a class="navbar-brand" href="#">Capitalizer</a>
+        </div>
+
+      </div>
+
+      <div class="jumbotron">
+        <h1>Capitalize-a-tron!</h1>
+      </div>
+
+      <div class="container">
+        <div class="input container">
+          <h2>Gimme some text:</h2>
+          <input id="incoming" class="form-control" type="text" />
+        </div>
+
+        <div class="options container">
+          <h2>What should I do to it?</h2>
+          <select id="caps-type" class="form-control" required='required'>
+            <option value="">-- Pick one --</option>
+            <option value="words">All Words Capitalized</option>
+            <option value="title">Proper Words in a Title</option>
+            <option value="sentence">Only sentence beginnings</option>
+            <option value="all">EVERYTHING</option>
+            <option value="none">nothing</option>
+            <option value="random">rAndOm LettERs</option>
+          </select>
+        </div>
+
+        <div class="output container">
+          <h2>Here you go!</h2>
+          <button id="doit" class="btn btn-lg btn-primary btn-block" type="submit">Go!</button>
+          <br>
+          <textarea id="outgoing" class="form-control"></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
